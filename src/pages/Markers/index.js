@@ -68,7 +68,7 @@ const Markers = () => {
                 <a-image
                   src={data.resourceUrl}
                   scale="2 2 2"
-                  position="1 -1 -1"
+                  position="1 1 1"
                   class="clickable"
                   rotation="-90 0 0"
                   gesture-handler
