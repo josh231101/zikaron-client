@@ -33,12 +33,11 @@ const Markers = () => {
 
   return (
     <>
+      <div class="arjs-loader">
+        <div>Loading, please wait...</div>
+      </div>
       {data.markerUrl && (
         <>
-          <div class="arjs-loader">
-            <div>Loading, please wait...</div>
-          </div>
-
           <a-scene
             vr-mode-ui="enabled: false;"
             renderer="logarithmicDepthBuffer: true;"
