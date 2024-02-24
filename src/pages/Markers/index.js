@@ -43,6 +43,7 @@ const Markers = () => {
             renderer="logarithmicDepthBuffer: true;"
             embedded
             arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+            gesture-detector
           >
             <a-marker
               id="animated-marker"
@@ -62,6 +63,7 @@ const Markers = () => {
                   rotation="-90 0 0"
                   geometry="primitive:plane"
                   material={`shader:gif;src:url(${data.resourceUrl}); alphaTest:1;`}
+                  gesture-handler
                 />
               ) : (
                 <a-image
