@@ -57,7 +57,7 @@ const Markers = () => {
               {data.resourceUrl &&
               getResourceType(data.resourceUrl) === "gif" ? (
                 <a-entity
-                  scale="2 2 2"
+                  scale="4 4 4"
                   position="0 0 0"
                   rotation="-90 0 0"
                   geometry="primitive:plane"
@@ -66,7 +66,7 @@ const Markers = () => {
               ) : (
                 <a-image
                   src={data.resourceUrl}
-                  scale="2 2 2"
+                  scale="4 4 4"
                   position="0 0 0"
                   class="clickable"
                   rotation="-90 0 0"
