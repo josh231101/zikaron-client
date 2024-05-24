@@ -11,6 +11,11 @@ const routes = [
     Component: lazy(() => import('./pages/Markers')),
     exact: true,
   },
+  {
+    path: '/qrs/:qrUrl',
+    Component: lazy(() => import('./pages/MarkersQRs')),
+    exact: true,
+  },
 ]
 
 const mapStateToProps = ({ settings, user }) => ({
